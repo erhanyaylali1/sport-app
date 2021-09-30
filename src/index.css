@@ -11,3 +11,109 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    background-color: #E8E8FF; 
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.screen {
+    height: 100%;
+    width: 100%;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin: 10px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-weight: 600;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    margin-top: 25px;
+    width: 60%;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 10px;
+}
+
+.input:focus {
+    outline: #4140E5;
+}
+
+.days {
+    background-color: white;
+    text-align: left !important;
+    padding: 0 10px;
+    border-radius: 5px;
+    width: 95%;
+}
+
+.eachDay {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.eachDay:not(:last-child) {
+    border-bottom: 1px solid #4140E5;
+}
+
+.languages {
+    margin-left: auto;
+}
+
+.languages:focus {
+    outline: none;
+    border: none;
+}
+
+.infoInput {
+    width: 90%;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+      width: 80%;
+    }
+  }
